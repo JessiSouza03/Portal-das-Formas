@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trapézio Irregular - Aventura Geométrica</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="capa"></div>
+        <h1>Trapézio Irregular</h1>
+    </header>
+    <main>
+        <section class="informacoes">
+            <h2>Informações sobre o Trapézio Irregular:</h2>
+            <img src="assets/imagens/icones/trap.png" alt="Círculo">
+            <p> Um trapézio irregular é um quadrilátero que possui pelo menos um par de lados paralelos, mas os outros dois lados não são necessariamente paralelos. Portanto, suas medidas laterais e ângulos internos podem variar, resultando em formas diversas. A área de um trapézio irregular pode ser calculada usando a fórmula que envolve a média das medidas das bases multiplicada pela altura perpendicular às bases.</p>
+            <h3>Calculadora de Área</h3>
+            <form id="form-trapezoide">
+                <label for="baseMaiorTrapezoide">Base Maior:</label>
+                <input type="number" id="baseMaiorTrapezoide" name="baseMaiorTrapezoide" required>
+                <label for="baseMenorTrapezoide">Base Menor:</label>
+                <input type="number" id="baseMenorTrapezoide" name="baseMenorTrapezoide" required>
+                <label for="alturaTrapezoide">Altura:</label>
+                <input type="number" id="alturaTrapezoide" name="alturaTrapezoide" required>
+                <button type="button" onclick="calcularAreaTrapezoideIrregular()">Calcular</button>
+            </form>
+            <p id="resultadoTrapezoide"></p>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

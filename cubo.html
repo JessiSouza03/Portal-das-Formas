@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubo - Aventura Geométrica</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="capa"></div>
+        <h1>Cubo</h1>
+    </header>
+    <main>
+        <section class="informacoes">
+            <h2>Informações sobre o Cubo:</h2>
+            <img src="assets/imagens/icones/cubo.png" alt="Cubo">
+            <p> O cubo é um sólido geométrico tridimensional que é uma das formas mais fundamentais da geometria. Ele possui seis faces quadradas idênticas, onde todos os ângulos são retos e todas as arestas têm o mesmo comprimento. Cada vértice do cubo é compartilhado por três faces, e as diagonais conectam vértices opostos. Suas propriedades geométricas incluem volume (o cubo do comprimento de qualquer uma de suas arestas) e área de superfície (seis vezes o quadrado do comprimento da aresta).</p>
+            <h3>Calculadora de Área</h3>
+            <form id="form-cubo">
+                <label for="ladoCubo">Lado:</label>
+                <input type="number" id="ladoCubo" name="ladoCubo" required>
+                <button type="button" onclick="calcularAreaCubo()">Calcular</button>
+            </form>
+            <p id="resultadoCubo"></p>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

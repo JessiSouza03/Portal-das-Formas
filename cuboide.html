@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubóide - Aventura Geométrica</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="capa"></div>
+        <h1>Cubóide</h1>
+    </header>
+    <main>
+        <section class="informacoes">
+            <h2>Informações sobre o Cubóide:</h2>
+            <img src="assets/imagens/icones/cuboide.png" alt="Cubóide">
+            <p>Em geometria, um cubóide é um hexaedro convexo de face quadrilátera. "Cubóide" significa "como um cubo", no sentido de um sólido convexo que pode ser transformado em um cubo ajustando os comprimentos de suas arestas e/ou os ângulos entre suas faces adjacentes.</p>
+            <h3>Calculadora de Área</h3>
+            <form id="form-cuboid">
+                <label for="comprimentoCuboid">Comprimento:</label>
+                <input type="number" id="comprimentoCuboid" name="comprimentoCuboid" required>
+                <label for="larguraCuboid">Largura:</label>
+                <input type="number" id="larguraCuboid" name="larguraCuboid" required>
+                <label for="alturaCuboid">Altura:</label>
+                <input type="number" id="alturaCuboid" name="alturaCuboid" required>
+                <button type="button" onclick="calcularAreaCuboide()">Calcular</button>
+            </form>
+            <p id="resultadoCuboid"></p>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

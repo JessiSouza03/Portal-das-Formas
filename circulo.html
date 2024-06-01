@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Círculo - Aventura Geométrica</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <div class="capa"></div>
+    <header>
+        <h1>Círculo</h1>
+    </header>
+    <main>
+        <section class="informacoes">
+            <h2>Informações sobre o Círculo:</h2>
+            <img src="assets/imagens/icones/circulo.png" alt="Círculo">
+            <p>No reino da geometria, o círculo é uma forma plana que consiste em todos os pontos equidistantes de um ponto fixo central chamado de centro. A distância constante entre o centro e qualquer ponto na circunferência é chamada de raio, enquanto uma linha que atravessa o centro e tem extremidades na circunferência é o diâmetro, que é duas vezes o raio. O círculo possui propriedades matemáticas notáveis, como sua área (π vezes o quadrado do raio) e seu perímetro (também conhecido como circunferência, igual a 2π vezes o raio).</p>
+            <h3>Calculadora de Área</h3>
+            <form id="form-circulo">
+                <label for="raio">Raio:</label>
+                <input type="number" id="raio" name="raio" required>
+                <button type="button" onclick="calcularAreaCirculo()">Calcular</button>
+            </form>
+            <p id="resultado"></p>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

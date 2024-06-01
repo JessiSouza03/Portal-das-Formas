@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romboedro - Aventura Geométrica</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="capa"></div>
+        <h1>Romboedro</h1>
+    </header>
+    <main>
+        <section class="informacoes">
+            <h2>Informações sobre o Romboedro:</h2>
+            <img src="assets/imagens/icones/rombo.png" alt="Círculo">
+            <p>O romboedro é um sólido geométrico tridimensional que possui seis faces, sendo cada uma um paralelogramo. Seus lados opostos são congruentes e paralelos. As diagonais opostas se intersectam em ângulos retos, dividindo o romboedro em quatro triângulos congruentes. Suas propriedades incluem volume (área da base multiplicada pela altura) e área de superfície (a soma das áreas das seis faces).</p>
+            <h3>Calculadora de Área</h3>
+            <form id="form-romboedro">
+                <label for="diagonalMaiorRomboedro">Diagonal Maior:</label>
+                <input type="number" id="diagonalMaiorRomboedro" name="diagonalMaiorRomboedro" required>
+                <label for="diagonalMenorRomboedro">Diagonal Menor:</label>
+                <input type="number" id="diagonalMenorRomboedro" name="diagonalMenorRomboedro" required>
+                <button type="button" onclick="calcularAreaRomboedro()">Calcular</button>
+            </form>
+            <p id="resultadoRomboedro"></p>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

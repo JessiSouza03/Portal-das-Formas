@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retângulo - Aventura Geométrica</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <div class="capa"></div>
+    <header>
+        <h1>Retângulo</h1>
+    </header>
+    <main>
+        <section class="informacoes">
+            <h2>Informações sobre o Retângulo:</h2>
+            <img src="assets/imagens/icones/retangulo.png" alt="Retângulo">
+            <p>Um retângulo é um quadrilátero que possui quatro ângulos retos, o que significa que seus lados opostos são paralelos e de igual comprimento. Os lados adjacentes também são perpendiculares entre si. As medidas dos lados adjacentes formam pares de ângulos suplementares. A área de um retângulo é o produto de seu comprimento e largura, enquanto seu perímetro é a soma de todos os seus lados.</p>
+            <h3>Calculadora de Área</h3>
+            <form id="form-retangulo">
+                <label for="baseRetangulo">Base:</label>
+                <input type="number" id="baseRetangulo" name="baseRetangulo" required>
+                <label for="alturaRetangulo">Altura:</label>
+                <input type="number" id="alturaRetangulo" name="alturaRetangulo" required>
+                <button type="button" onclick="calcularAreaRetangulo()">Calcular</button>
+            </form>
+            <p id="resultadoRetangulo"></p>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

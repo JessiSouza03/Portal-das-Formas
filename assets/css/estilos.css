@@ -1,0 +1,168 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+@font-face {
+        font-family: 'Eraser';
+        src: url('../fonte/EraserRegular.ttf') format('truetype');
+}*/
+
+
+body {
+    background-image: url('../imagens/lousa.png');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.capa {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.63);
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 20px; 
+}
+
+h3 {
+    margin-top: 15px;;
+    margin-bottom: 15px; 
+}
+
+main {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    z-index: 1;
+}
+
+.formas {
+    text-align: center;
+}
+
+.formas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Espaçamento entre as imagens */
+    margin-top: 20px;
+}
+
+.formas img {
+    width: 100%; /* Ajustado para responsividade */
+    max-width: 150px; /* Tamanho máximo para garantir que as imagens não fiquem muito grandes */
+    height: auto;
+}
+
+.informacoes {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    margin-bottom: 20px; /* Espaço entre as informações e a próxima seção */
+}
+
+.informacoes img {
+    display: block;
+    margin: 0 auto 20px auto; 
+    width: 200px;
+    height: 200px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px; 
+}
+
+input[type="number"] {
+    width: 100px;
+    padding: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px; 
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#resultado {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Ajuste para responsividade e rolagem do conteúdo */
+body {
+    overflow-x: hidden; 
+}
+
+main {
+    overflow-y: auto; 
+}
+
+@media screen and (max-width: 976px) {
+    .formas-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px; 
+    }
+}
+
+/* Estilos para telas menores que 762px */
+@media screen and (max-width: 762px) {
+    h1 {
+        font-size: 28px; 
+    }
+    
+    .formas-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Estilos para telas menores que 516px */
+@media screen and (max-width: 516px) {
+    h1 {
+        font-size: 24px; 
+    }
+    
+    .formas-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    
+    .formas img {
+        max-width: 100px; 
+}
+}

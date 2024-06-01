@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrado - Aventura Geométrica</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="capa"></div>
+        <h1>Quadrado</h1>
+    </header>
+    <main>
+        <section class="informacoes">
+            <h2>Informações sobre o Quadrado:</h2>
+            <img src="assets/imagens/icones/quadrado.png" alt="Círculo">
+            <p>O quadrado é um polígono convexo que possui quatro lados. Em outras palavras, é uma figura geométrica plana que possui quatro lados congruentes e quatro ângulos retos. Dessa maneira, é chamado também de quadrilátero. Os quadrados pertencem a um universo de figuras geométricas conhecido como paralelogramos.</p>
+            <h3>Calculadora de Área</h3>
+            <form id="form-quadrado">
+                <label for="ladoQuadrado">Lado:</label>
+                <input type="number" id="ladoQuadrado" name="ladoQuadrado" required>
+                <button type="button" onclick="calcularAreaQuadrado()">Calcular</button>
+            </form>
+            <p id="resultadoQuadrado"></p>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

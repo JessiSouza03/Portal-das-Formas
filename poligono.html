@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polígono Regular - Aventura Geométrica</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="capa"></div>
+        <h1>Polígono Regular</h1>
+    </header>
+    <main>
+        <section class="informacoes">
+            <h2>Informações sobre o Polígono Regular:</h2>
+            <img src="assets/imagens/icones/poligono.png" alt="Polígono">
+            <p> Um polígono regular é uma figura geométrica plana que possui todos os lados e ângulos congruentes entre si. Quando um polígono tem N lados, é chamado de N-gono. As propriedades de um polígono regular incluem ângulos internos e externos iguais, bem como a capacidade de ser inscrito em uma circunferência. O cálculo da área e do perímetro de um polígono regular depende do número de lados e do comprimento de cada lado.</p>
+            <h3>Calculadora de Área</h3>
+            <form id="form-poligono">
+                <label for="ladoPoligono">Lado:</label>
+                <input type="number" id="ladoPoligono" name="ladoPoligono" required>
+                <label for="nLados">Número de Lados:</label>
+                <input type="number" id="nLados" name="nLados" required>
+                <label for="apotema">Apótema:</label>
+                <input type="number" id="apotema" name="apotema" required>
+                <button type="button" onclick="calcularAreaPoligonoRegular()">Calcular</button>
+            </form>
+            <p id="resultadoPoligono"></p>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

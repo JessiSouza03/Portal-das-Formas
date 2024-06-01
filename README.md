@@ -1,4 +1,4 @@
-# Portal das Formas - Aventura Geométrica
+# Aventura Geométrica
 
 Bem-vindo à Aventura Geométrica! Este é um projeto simples desenvolvido como parte de um exercício prático para aprender desenvolvimento web. Ele apresenta uma plataforma para explorar diferentes formas geométricas, calcular áreas e mergulhar em um mundo de descobertas matemáticas.
 
